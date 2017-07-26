@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>《我们的爱》</title>
+    <meta name="keywords" content="《我们的爱》" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta itemprop="name" content="《我们的爱》"/>
+    <meta itemprop="description" name="description"  content="情人节到了，来听听我们的爱情故事"/>
+    <meta itemprop="image" content="http://qzonestyle.gtimg.cn/aoi/sola/20150210160000_mEKhQkathb.jpg" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="http://qzonestyle.gtimg.cn/qz-act/mobile/20150202-love/style.css?time=85973"/>
+    <style>
+        html {
+            -webkit-user-select:none;
+            user-select:none;
+        }
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div id="j-panel-set" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)">
+    <div>
+        <label>效果
+            <select id="j-slider">
+                <option value="none">无</option>
+                <option value="scrollUpDown">上下滚动</option>
+                <option value="scrollLeftRight">左右滚动</option>
+                <option value="slideIn">切入</option>
+                <option value="fadeInOut">淡入淡出</option>
+                <option value="custom1" selected="selected">自定义1</option>
+                <option value="custom2">自定义2</option>
+                <option value="custom3">自定义3</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <button id="j-start">开始</button>
+    </div>
+</div>
+<div id="j-panel-main" class="main" style="display: none">
+    <section class="page page1" style="background-color: #e7dbd1;">
+        <div class="page_container module1">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"></div>
+                <div class="love-txt">
+                    <b class="love-1"></b>
+                    <b class="love-2"></b>
+                    <b class="love-3"></b>
+                    <b class="love-4"></b>
+                    <b class="love-5"></b>
+                    <b class="love-6"></b>
+                    <b class="love-7"></b>
+                    <b class="love-8"></b>
+                    <b class="love-9"></b>
+                    <b class="love-10"></b>
+                </div>
+                <div class="logo-txt">
+                    <p class="ele-tit"></p>
+                    <p class="ele-slogen"></p>
+                </div>
+
+                <!--<p class="word" style="">寻</p>-->
+                <!--<p class="word-2" style="position: absolute;font-size: 50px;color: #40c22a;font-weight: bold;top:210px;left:50%;transform:translateX(-50%);padding: 0;margin-left: 50px;">觅</p>-->
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page2">
+        <div class="page_container module2">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"></div>
+                <div class="love-txt love-merge">
+                    <b class="love-1"></b>
+                    <b class="love-2"></b>
+                    <b class="love-3"></b>
+                    <b class="love-4"></b>
+                    <b class="love-5"></b>
+                    <b class="love-6"></b>
+                    <b class="love-7"></b>
+                    <b class="love-8"></b>
+                    <b class="love-9"></b>
+                    <b class="love-10"></b>
+                </div>
+                <div class="logo-txt">
+                    <p class="ele-tit"></p>
+                    <p class="ele-slogen"></p>
+                </div>
+                <div class="cat-list">
+                    <p class="cat1"></p>
+                    <p class="cat2"></p>
+                    <p class="cat3"></p>
+                    <p class="cat4"></p>
+                    <p class="cat5"></p>
+                    <p class="cat6"></p>
+                    <p class="cat7"></p>
+                    <p class="cat8"></p>
+                    <p class="cat9"></p>
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page3">
+        <div class="page_container module3">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <canvas id="snow"></canvas>
+                <div class="inner-bg"></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page4">
+        <div class="page_container module4">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"><b class="before"></b><b class="after"></b></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                        <b class="words-5"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page5">
+        <div class="page_container module5">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"><b class="before"></b><b class="after"></b></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page6">
+        <div class="page_container module6">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page7">
+        <div class="page_container module7">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"></div>
+                <div class="txt-hd">
+                    <div class="hd-petals">
+                        <b class="petal petal-one"></b>
+                        <b class="petal petal-two"></b>
+                        <b class="petal petal-three"></b>
+                        <b class="petal petal-four"></b>
+                        <b class="petal petal-five"></b>
+                        <b class="petal petal-six"></b>
+                        <b class="petal petal-seven"></b>
+                        <b class="petal petal-eight"></b>
+                        <b class="petal petal-nine"></b>
+                        <b class="petal petal-ten"></b>
+                    </div>
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page8">
+        <div class="page_container module8">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"><b class="before"></b><b class="after"></b></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                        <b class="words-5"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page10">
+        <div class="page_container module10">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"><b class="before"></b><b class="after"></b></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page9">
+        <div class="page_container module9">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"><b class="before"></b><b class="after"></b></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                        <b class="words-5"></b>
+                        <b class="words-6"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page11">
+        <div class="page_container module11">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"></div>
+                <div class="txt-hd">
+                    <div class="hd-wrap">
+                            <span class="word-l">
+                                <b class="word-l-1"></b>
+                                <b class="word-l-2"></b>
+                            </span>
+                        <span class="word-s"></span>
+                        <span class="words"></span>
+                    </div>
+                </div>
+                <div class="txt-bd">
+                    <p class="bd-words">
+                        <b class="words-1"></b>
+                        <b class="words-2"></b>
+                        <b class="words-3"></b>
+                        <b class="words-4"></b>
+                    </p>
+                    <hr class="line-right" />
+                </div>
+                <b class="ele-arrow"></b>
+            </div>
+        </div>
+    </section>
+    <section class="page page12">
+        <div class="page_container module12">
+            <div class="inner">
+                <b class="s-music music-close"></b>
+                <div class="inner-bg"></div>
+                <div class="love-txt love-merge">
+                    <b class="love-1"></b>
+                    <b class="love-2"></b>
+                    <b class="love-3"></b>
+                    <b class="love-4"></b>
+                    <b class="love-5"></b>
+                    <b class="love-6"></b>
+                    <b class="love-7"></b>
+                    <b class="love-8"></b>
+                    <b class="love-9"></b>
+                    <b class="love-10"></b>
+                </div>
+                <div class="logo-txt">
+                    <p class="ele-tit"></p>
+                    <p class="ele-slogen"></p>
+                </div>
+                <div class="over-area">
+                    <p class="over-txt1"></p>
+                    <p class="over-txt2"></p>
+                    <p class="over-txt3"></p>
+                    <p class="over-txt4"></p>
+                    <div class="op-btn">
+                        <a id="j-invoke" href="javascript:;" class="btn-find">寻找爱</a>
+                        <a id="j-share" href="javascript:;" class="btn-send">告诉TA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="http://qzonestyle.gtimg.cn/ac/lib/sea/2.1.2/sea.js"></script>
+<script src="http://qzonestyle.gtimg.cn/ac/lib/jquery/1.10.2/jquery.js"></script>
+<script>
+    seajs.use(['jquery', './index'], function($, Excroll) {
+        Excroll.registSlider('custom1', {
+            prev: {
+                'display': 'block',
+                'transform': 'perspective(100px) rotateX(-90deg) translateY(0)',
+                'transform-origin': 'top'
+            },
+            cur: {
+                'display': 'block',
+                'transform': 'translateY(0)',
+                'transform-origin': 'top'
+            },
+            next: {
+                'display': 'block',
+                'transform': 'translateY(100%)'
+            }
+        });
+        Excroll.registSlider('custom2', {
+            prev: {
+                'display': 'block',
+                'transform': 'translate3d(100%,-100%,1px) scale(0) rotateZ(720deg)'
+            },
+            cur: {
+                'display': 'block',
+                'transform': 'translate3d(0,0,0) scale(1) rotateZ(0)',
+                'opacity': '1'
+            },
+            next: {
+                'display': 'block',
+                'opacity': '0'
+            }
+        });
+        Excroll.registSlider('custom3', {
+            beforePrev: {
+                'display': 'block',
+                'transform': 'perspective(100px) translate3d(-100%,0,0) scale(0.3) rotateY(-3deg)',
+                'z-index': 1,
+                'opacity': '0'
+            },
+            prev: {
+                'display': 'block',
+                'transform': 'perspective(100px) translate3d(-60%,0,0) scale(0.5) rotateY(-2deg)',
+                'z-index': 2,
+                'opacity': '0.5'
+            },
+            cur: {
+                'display': 'block',
+                'transform': 'perspective(100px) translate3d(0,0,0) scale(0.8) rotateY(0)',
+                'z-index': 3,
+                'opacity': '1'
+            },
+            next: {
+                'display': 'block',
+                'transform': 'perspective(100px) translate3d(60%,0,0) scale(0.5) rotateY(2deg)',
+                'z-index': 2,
+                'opacity': '0.5'
+            },
+            afterNext: {
+                'display': 'block',
+                'transform': 'perspective(100px) translate3d(100%,0,0) scale(0.3) rotateY(3deg)',
+                'z-index': 1,
+                'opacity': '0'
+            }
+        });
+        $('#j-start').click(function() {
+            var slider = $('#j-slider').val();
+
+            Excroll.init({
+                wrap: '#j-panel-main',
+                item: 'section',
+                slider: slider,
+                loop: slider == 'custom3' ? 'next' : '',
+                beforeScroll: function(from, to) {
+                    console.info('before', from, to)
+                },
+                afterScroll: function(from, to) {
+                    console.info('after', from, to)
+                }
+            });
+            $(document).on('mousewheel', function(evt) {
+                if (evt.originalEvent.wheelDelta > 0) {
+                    Excroll.scrollPrev();
+                } else {
+                    Excroll.scrollNext();
+                }
+            });
+            $('#j-panel-set').hide();
+            $('#j-panel-main').show();
+        });
+    });
+</script>
+</body>
+</html>
